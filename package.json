@@ -1,0 +1,11 @@
+{
+  "name": "atividade-05-santander-lets-code",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TulioColmanetti/atividade-05-santander-lets-code.git",
+  "author": "danieltvaz <danieltostes@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}
