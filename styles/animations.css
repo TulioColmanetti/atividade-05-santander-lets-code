@@ -1,0 +1,16 @@
+@keyframes pulse {
+  0% {
+    width: 140px;
+    height: 40px;
+  }
+  50% {
+    width: 150px;
+    height: 45px;
+    color: red;
+    box-shadow: 2px 1px 5px 2px #313131;
+  }
+  100% {
+    width: 140px;
+    height: 40px;
+  }
+}

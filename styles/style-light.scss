@@ -1,0 +1,98 @@
+@import url(./animations.css);
+
+$header-height: 68px;
+$footer-height: 38px;
+$background-primary: #f1f2f6;
+$background-secondary: #b0c4de;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header-container {
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $background-primary;
+  p {
+    font-size: 38px;
+    text-align: center;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - $header-height - $footer-height);
+
+  section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $background-primary;
+    min-width: 460px;
+    height: 660px;
+    border-radius: 15px;
+    h2 {
+      text-align: center;
+    }
+    img {
+      width: 350px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px;
+      background: $background-secondary;
+      height: 20%;
+      border-radius: 15px;
+      box-shadow: 1px 1px 5px #a1a1a1;
+      min-width: 420px;
+      p {
+        display: flex;
+        justify-content: space-around;
+        min-width: 250px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+    button {
+      width: 100px;
+      height: 40px;
+      border-radius: 8px;
+      border: none;
+      background: #313131;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 3px;
+      margin: auto;
+      animation: 0.5s infinite pulse;
+      cursor: pointer;
+      &:hover {
+        animation-play-state: paused;
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $background-primary;
+  height: $footer-height;
+
+  p {
+    text-align: center;
+  }
+}
